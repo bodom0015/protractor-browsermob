@@ -8,6 +8,6 @@ WORKDIR /project
 RUN npm install -g protractor && npm install
 
 # Start BrowserMob Proxy
-RUN 
+RUN ./browsermob-proxy
 
 CMD [ "npm", "test" ]

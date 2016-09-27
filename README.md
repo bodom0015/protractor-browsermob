@@ -14,10 +14,10 @@ Experimenting with:
 * Modify spec for your load test
 * `docker run -it --rm -v `pwd`:/project -w /project bodom0015/protractor npm test`
 
-Docker should now run your test inside of a container with the following packages:
-** Node.js
-** NPM
-** Protractor
-** Selenium WebDrivers (runs as a service)
-** Coming soon: BrowserMob Proxy (will run as a service)
-
+# Viola!
+Docker should now run your test spec inside of a container with the following packages:
+* Node.js
+* NPM
+* Protractor
+* Selenium WebDrivers (runs as a service)
+* Coming soon: BrowserMob Proxy (will run as a service)
