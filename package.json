@@ -1,0 +1,13 @@
+{
+  "name": "protractor-browsermob",
+  "version": "0.0.0",
+  "devDependencies": {
+    "browsermob-proxy": "~1.0.6",
+    "protractor": "~1.1.1",
+    "q": "~1.0.1"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/protractor/bin/webdriver-manager update",
+    "test": "node node_modules/protractor/bin/protractor protractor.conf.js"
+  }
+}
