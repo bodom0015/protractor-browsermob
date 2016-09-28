@@ -2,7 +2,7 @@
  */
 
 describe('Angular Homepage', function () {
-  beforeEach(function (done) {
+/*  beforeEach(function (done) {
     console.log('beforeEach');
     console.log('browser.params.proxy', browser.params.proxy);
     console.log('browser.params.proxyData', browser.params.proxyData);
@@ -16,14 +16,17 @@ describe('Angular Homepage', function () {
       done();
     });
   });
-
+*/
   it('should greet the named user', function () {
     console.log('it');
 
     browser.get('https://angularjs.org');
+    console.log('Navigated!');
     element(by.model('yourName')).sendKeys('World');
 
+    console.log('Entered name!');
     var greeting = element(by.binding('yourName'));
     expect(greeting.getText()).toEqual('Hello World!');
+    console.log('Success!');
   });
 });

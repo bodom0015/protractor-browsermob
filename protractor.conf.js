@@ -16,7 +16,7 @@ exports.config = {
 
   specs: ['spec.js'],
 
-  onPrepare: function () {
+  /*onPrepare: function () {
     console.log('onPrepare');
 
     var proxy = new Proxy();
@@ -35,5 +35,5 @@ exports.config = {
   onComplete: function () {
     console.log('onComplete');
     return Q.ninvoke(browser.params.proxy, 'stop', browser.params.proxy);
-  }
+  }*/
 };
