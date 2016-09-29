@@ -7,4 +7,5 @@ WORKDIR /project
 # Install dependencies
 RUN npm install
 
+ENTRYPOINT []
 CMD [ "./entrypoint.sh" ]

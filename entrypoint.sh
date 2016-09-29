@@ -2,6 +2,6 @@
 
 webdriver-manager update
 
-./browsermob-proxy -port 8080
+./bin/browsermob-proxy -port 8080 &
 
-npm test
+/protractor.sh
