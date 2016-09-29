@@ -1,7 +1,7 @@
 /* global describe, beforeEach, afterEach, it, console, browser, element, expect
  */
 
-describe('Angular Homepage', function () {
+describe('Protractor Demo App', function () {
   beforeEach(function (done) {
     console.log('beforeEach');
     console.log('browser.params.proxy', browser.params.proxy);
@@ -17,16 +17,12 @@ describe('Angular Homepage', function () {
     });
   });
 
-  it('should greet the named user', function () {
-    console.log('Started!');
 
-    browser.get('https://angularjs.org');
-    console.log('Navigated!');
-    element(by.model('yourName')).sendKeys('World');
-
-    console.log('Entered name!');
-    var greeting = element(by.binding('yourName'));
-    expect(greeting.getText()).toEqual('Hello World!');
-    console.log('Success!');
+  it('should have a title', function() {
+    browser.get('http://juliemr.github.io/protractor-demo/');
+    console.log("Loaded: ", browser.getTitle());
+    expect(browser.getTitle()).toEqual('Super Calculator');
   });
+
+
 });
