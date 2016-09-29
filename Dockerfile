@@ -1,11 +1,13 @@
 FROM webnicer/protractor-headless
 
 # Copy in source and set working dir
-COPY . /project
-WORKDIR /project
+COPY . /protractor
+WORKDIR /protractor
 
 # Install dependencies
 RUN npm install
 
-ENTRYPOINT []
-CMD [ "./entrypoint.sh" ]
+# Install webdrivers
+RUN webdriver-manager update
+
+ENTRYPOINT [ "./entrypoint.sh" ]
