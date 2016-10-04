@@ -4,48 +4,24 @@ var Proxy = require('browsermob-proxy').Proxy,
 
 exports.config = {
   framework: 'jasmine',
-//  seleniumAddress: 'http://localhost:4444/wd/hub',
+  allScriptsTimeout: 300000,
+  seleniumAddress: 'http://localhost:4444/wd/hub',
   chromeOnly: true,
 
   multiCapabilities: [{
     browserName: 'chrome',
-    proxy: {
-      proxyType: 'manual',
-      httpProxy: 'localhost:8888',
-      sslProxy: 'localhost:8888'
-    }
   },
   {
     browserName: 'chrome',
-    proxy: {
-      proxyType: 'manual',
-      httpProxy: 'localhost:8888',
-      sslProxy: 'localhost:8888'
-    }
   },
   {
     browserName: 'chrome',
-    proxy: {
-      proxyType: 'manual',
-      httpProxy: 'localhost:8888',
-      sslProxy: 'localhost:8888'
-    }
   },
   {
     browserName: 'chrome',
-    proxy: {
-      proxyType: 'manual',
-      httpProxy: 'localhost:8888',
-      sslProxy: 'localhost:8888'
-    }
-  },
+  },  
   {
     browserName: 'chrome',
-    proxy: {
-      proxyType: 'manual',
-      httpProxy: 'localhost:8888',
-      sslProxy: 'localhost:8888'
-    }
   }],
 
   /*capabilities: {

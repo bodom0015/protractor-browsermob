@@ -1,9 +1,14 @@
 #!/bin/sh
 
-webdriver-manager update
+#Xvfb :0 -ac -screen 0 1024x768x24 &
+#export DISPLAY=:0.0
 
-#webdriver-manager start &
+#node ./node_modules/protractor/bin/webdriver-manager update
 
-./bin/browsermob-proxy -port 8080 &
+node ./node_modules/protractor/bin/webdriver-manager start --standalone &
+
+#./bin/browsermob-proxy -port 8888 &
+
+#protractor ./protractor.conf.js
 
 /protractor.sh

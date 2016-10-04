@@ -8,5 +8,8 @@
   "scripts": {
     "postinstall": "webdriver-manager update",
     "test": "protractor protractor.conf.js"
+  },
+  "dependencies": {
+    "protractor": "^4.0.9"
   }
 }
